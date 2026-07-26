@@ -102,14 +102,14 @@ Performance is evaluated separately for:
 
 ### Retrieval Performance
 
-| Metric | Base | Fine-Tuned |
-|--------|------:|-----------:|
-| Recall@1 | 0.9527 | 0.9081 |
-| Recall@3 | 0.9905 | 0.9426 |
-| Recall@5 | 0.9942 | 0.9459 |
-| Recall@10 | 0.9966 | 0.9495 |
-| MRR | 0.9717 | 0.9258 |
-| MAP | 0.9717 | 0.9258 |
+| Metric      | Base      | Fine-Tuned |
+|-------------|----------:|-----------:|
+| Recall@1    | 0.9527    | 0.9081     |
+| Recall@3    | 0.9905    | 0.9426     |
+| Recall@5    | 0.9942    | 0.9459     |
+| Recall@10   | 0.9966    | 0.9495     |
+| MRR         | 0.9717    | 0.9258     |
+| MAP         | 0.9717    | 0.9258     |
 
 The fine-tuned model consistently underperformed the base model across all retrieval metrics.
 
