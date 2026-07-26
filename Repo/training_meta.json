@@ -1,0 +1,8 @@
+{
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "n_train": 957,
+  "n_clusters": 89,
+  "query_instruction": "Instruct: Given a Bill of Quantities (BOQ) document from the construction domain, retrieve the most semantically similar BOQ documents that describe the same type of construction project.\nQuery: ",
+  "lora_merged": true,
+  "version": "v36"
+}

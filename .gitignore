@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Local environment and secrets
+.env
+.env.*
+*.env
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.tmp/
+tmp/
+
+# Large project artifacts and generated data
+*.pdf
+*.pkl
+*.pickle
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+*.joblib
+*.npy
+*.npz
+*.parquet
+*.arrow
+
+# Project-specific large folders
+Repo/BOQ_Test/
+Repo/BOQ_TestQuery/
+Repo/corpus_pdfs/
+Repo/cluster_state/*.pkl
+Repo/cluster_state/*.bin
+Repo/cluster_state/*.pt
+Repo/cluster_state/*.pth
+Repo/.cache/
+Repo/notebooks/
+
+# OS files
+.DS_Store
+Thumbs.db
