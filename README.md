@@ -113,14 +113,14 @@ The fine-tuned model underperforms the base model on **every** ranking-quality m
 
 *(For single-relevant-item queries, MAP is mathematically equivalent to MRR — which is what we observe above.)*
 
-![Retrieval benchmark comparison bar chart, base vs fine-tuned, across Recall@K, Precision@K, MRR, MAP, and error rate](figures/retrieval_benchmark_comparison.png)
+![Retrieval benchmark comparison bar chart, base vs fine-tuned, across Recall@K, Precision@K, MRR, MAP, and error rate](Media/retrieval_benchmark_comparison.png)
 
 **Recall@K and Precision@K trends:**
 
 <table>
 <tr>
-<td width="50%"><img src="figures/recall_at_k_comparison.png" alt="Recall@K line chart"></td>
-<td width="50%"><img src="figures/precision_at_k_comparison.png" alt="Precision@K line chart"></td>
+<td width="50%"><img src="Media/recall_at_k_comparison.png" alt="Recall@K line chart"></td>
+<td width="50%"><img src="Media/precision_at_k_comparison.png" alt="Precision@K line chart"></td>
 </tr>
 </table>
 
@@ -128,7 +128,7 @@ The base model leads at every K, and the precision trend mirrors it.
 
 **Normalized radar view** — all metrics on one chart:
 
-![Radar chart comparing base vs fine-tuned model across all metrics](figures/radar_overall_parameters.png)
+![Radar chart comparing base vs fine-tuned model across all metrics](Media/radar_overall_parameters.png)
 
 ### Similarity Metrics
 
@@ -140,7 +140,7 @@ Although retrieval quality decreased, embedding similarity *increased* after fin
 | Maximum Similarity | 0.9387 | 0.9675 | +0.0288 |
 | Minimum Similarity | 0.7517 | 0.8471 | +0.0954 |
 
-![Similarity metrics comparison bar chart](figures/similarity_metrics_comparison.png)
+![Similarity metrics comparison bar chart](Media/similarity_metrics_comparison.png)
 
 > **Higher similarity does not necessarily translate into better retrieval performance.**
 
@@ -151,7 +151,7 @@ Although retrieval quality decreased, embedding similarity *increased* after fin
 | Latency (ms/query) | 0.1042 | 0.1104 | +0.0062 |
 | Throughput (QPS) | 9596.28 | 9059.14 | −537.14 |
 
-![Efficiency metrics comparison bar chart](figures/efficiency_metrics_comparison.png)
+![Efficiency metrics comparison bar chart](Media/efficiency_metrics_comparison.png)
 
 Fine-tuning introduced a small computational overhead while keeping efficiency broadly comparable.
 
@@ -163,7 +163,7 @@ Fine-tuning introduced a small computational overhead while keeping efficiency b
 | Medium | 0.9245 | 0.9368 | +0.0124 |
 | Hard | 0.9878 | 0.9873 | −0.0004 |
 
-![Query difficulty performance bar chart](figures/query_difficulty_performance.png)
+![Query difficulty performance bar chart](Media/query_difficulty_performance.png)
 
 The fine-tuned model shows a **major accuracy drop on Easy queries**, a slight improvement on Medium queries, and near-identical performance on Hard queries — suggesting the fine-tuned model may have overfit to more complex BOQ patterns at the expense of simple ones.
 
@@ -224,7 +224,7 @@ Larger datasets and broader query coverage are recommended before drawing defini
 ├── notebooks/        # Exploratory analysis notebooks
 ├── scripts/          # Pipeline scripts (extraction, indexing, eval)
 ├── results/          # Raw benchmark result tables
-├── figures/           # Charts referenced in this README
+├── Media/           # Charts referenced in this README
 ├── README.md
 └── requirements.txt
 ```
